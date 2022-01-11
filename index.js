@@ -8,6 +8,8 @@ const msal = require('@azure/msal-node');
 const SERVER_PORT = process.env.PORT || 3000;
 const REDIRECT_URI = process.env.REDIRECT_URI || "http://localhost:3000/redirect";
 
+console.log('PORT', SERVER_PORT);
+
 // Before running the sample, you will need to replace the values in the config, 
 // including the clientSecret
 

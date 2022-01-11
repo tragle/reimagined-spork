@@ -6,7 +6,7 @@ const express = require("express");
 const msal = require('@azure/msal-node');
 
 const SERVER_PORT = process.env.PORT || 3000;
-const REDIRECT_URI = "http://localhost:3000/redirect";
+const REDIRECT_URI = process.env.REDIRECT_URI || "http://localhost:3000/redirect";
 
 // Before running the sample, you will need to replace the values in the config, 
 // including the clientSecret
@@ -17,9 +17,12 @@ const clientSecret = process.env.CLIENT_SECRET;
 
 const config = {
     auth: {
-        clientId: "e35e25d0-f39e-4e5b-946f-21dc13813be6",
-        authority: "https://login.microsoftonline.com/79f98e4e-5d13-4d9b-a03c-5af34299ad4a",
-        clientSecret: "9HR7Q~Hf3YqmH0y_vp2j~j1RPkzvi6Uee8Ttp"
+        clientId,
+        authorit,
+        clientSecret:
+        // clientId: "e35e25d0-f39e-4e5b-946f-21dc13813be6",
+        // authority: "https://login.microsoftonline.com/79f98e4e-5d13-4d9b-a03c-5af34299ad4a",
+        // clientSecret: "9HR7Q~Hf3YqmH0y_vp2j~j1RPkzvi6Uee8Ttp"
     },
     system: {
         loggerOptions: {

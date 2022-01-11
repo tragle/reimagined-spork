@@ -20,8 +20,8 @@ const clientSecret = process.env.CLIENT_SECRET;
 const config = {
     auth: {
         clientId,
-        authorit,
-        clientSecret:
+        authority,
+        clientSecret
         // clientId: "e35e25d0-f39e-4e5b-946f-21dc13813be6",
         // authority: "https://login.microsoftonline.com/79f98e4e-5d13-4d9b-a03c-5af34299ad4a",
         // clientSecret: "9HR7Q~Hf3YqmH0y_vp2j~j1RPkzvi6Uee8Ttp"
